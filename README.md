@@ -48,6 +48,13 @@ By opening a local server using the Flask library, it creates two methods of com
 ![Bot Demo](https://yourimageurl.com/demo.gif)
 
 ---
+### 📜 **Requirements - `requirements.txt`:**
+
+```txt
+requests
+flask
+discord
+```
 
 ### 📜 **Server Code (Flask) - `Server.py`:**
 
