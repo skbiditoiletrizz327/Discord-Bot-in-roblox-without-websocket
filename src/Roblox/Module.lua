@@ -23,6 +23,11 @@ local function fetchCommand()
     if success then
         local commandData = game:GetService("HttpService"):JSONDecode(response)
         local command = commandData.command
+
+        if not command or command == "" then
+            return
+        end
+
         local arguments = string.split(command, " ")
 
         if Commands[arguments[1]] and Cache["Command"] ~= command then
