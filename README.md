@@ -7,12 +7,11 @@
 
 ## 🛠 **Execute Client-Side Commands in Roblox via Discord**
 
-You can **integrate a Discord bot** into your Roblox game, allowing seamless interaction between Discord and your Roblox client.
+You can **integrate a Discord bot** into your Roblox instance, allowing you to interact with discord.
 
 ### 📋 **Features:**
 - **Control Roblox client** through Discord commands.
 - Simple, WebSocket-free setup.
-- **Real-time actions** performed by your in-game character.
 
 ---
 
@@ -20,7 +19,7 @@ You can **integrate a Discord bot** into your Roblox game, allowing seamless int
 
 Type `.say hi` in Discord, and the Roblox client will say:
 
-> _**hi**_ 🎤
+> _**hi**_ 
 
 🎯 **Command Structure:**
 
