@@ -17,9 +17,21 @@ You can **integrate a Discord bot** into your Roblox instance, allowing you to i
 
 ---
 
-### ✨ **How It Works:**
+### ❓ **How It Works:**
 
-By opening a local server using the Flask library, it creates two methods of command exchange between Discord and the Roblox client.
+By setting up a **local server** using the **Flask** library, you enable communication between Discord and your Roblox client. The server acts as a **middleman** that receives commands from Discord and sends them to the Roblox client.
+
+#### 1. **Flask Local Server:**
+   - Flask creates a local web server running on your computer (localhost) that listens for HTTP requests. This allows both the Discord bot and the Roblox client to interact with it via **POST** and **GET** requests.
+   
+#### 2. **Receiving Commands (POST Request):**
+   - When you type a command in Discord (e.g., `.say hi`), the Discord bot sends a **POST request** to the Flask server, containing the command in JSON format. 
+   - Flask receives this command and stores it as `latest_command` in the server's memory. It then sends a response back to the Discord bot confirming the command was received successfully.
+
+#### 3. **Retrieving Commands (GET Request):**
+   - On the Roblox side, the game client makes periodic **GET requests** to the Flask server to check for any new commands. 
+   - The Flask server responds with the latest command received from Discord, which the Roblox client then processes (e.g., displaying the message in the chat or making the character perform an action).
+
 
 ---
 
