@@ -27,14 +27,13 @@ Type `.say hi` in Discord, and the Roblox client will say:
 |----------|---------------------------------|
 | `.say`   | Sends a message to Roblox chat. |
 | `.jump`  | Makes your Roblox character jump. |
-| `.dance` | Makes your Roblox character dance. |
 
 ---
 
 > **🔧 Setup Guide:**  
-> 1. Download the Roblox script.  
-> 2. Set up the Discord bot.  
-> 3. Link them to your game and enjoy!
+> 1. [Download Python](https://www.python.org/)
+> 2. Once the python Installer is opened click "add to path" and then install
+> 3. 
 
 ---
 
