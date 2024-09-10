@@ -14,7 +14,7 @@ client = discord.Client(intents=intents)
 @client.event
 async def on_ready():
     print(f'Logged in as {client.user}')
-    requests.post(SERVER_URL, json={'command': ".say Loaded"}) ## please put a command here before launching
+    requests.post(SERVER_URL, json={'command': ""}) 
 
 @client.event
 async def on_message(message):
