@@ -1,4 +1,4 @@
-# **🎮 Discord Bot in Roblox (No WebSocket Required) 🤖**
+# ** Discord Bot in Roblox (No WebSocket Required) **
 
 [![Discord](https://img.shields.io/badge/Discord-Bot-7289da?logo=discord&logoColor=white)](https://discord.com)
 [![Roblox](https://img.shields.io/badge/Roblox-Scripted-red?logo=roblox)](https://roblox.com)
