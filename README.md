@@ -1,5 +1,11 @@
-# Discord-Bot-in-roblox-without-websocket
+# Discord Bot in Roblox (No WebSocket Required)
 
-## You can use a Discord bot in roblox with this (using exploits) and execute commands in the client
+## Use a Discord bot in Roblox to execute client-side commands
 
-### example you do .say hi and it says hi on the roblox client
+With this approach, you can send commands from Discord to your Roblox client. For example:
+
+### Example:
+
+If you type `.say hi` in Discord, it will execute and say "hi" on the Roblox client.
+
+---
