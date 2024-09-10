@@ -77,7 +77,7 @@ if __name__ == "__main__":
 
 ### 📜 **Client Code Bot - `Client.py`:**
 
-```
+```py
 import discord
 import requests
 
