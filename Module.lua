@@ -1,7 +1,9 @@
-local url = "http://127.0.0.1:8000/command"
-local Commands = {} 
+local CommandModule = {}
+local url = "http://127.0.0.1:8000/command" -- or your server url
+local Commands = {}
+local Cache = {}
 
-local function AddCommand(commandName, func)
+function CommandModule:AddCommand(commandName, func)
     Commands[commandName] = func
 end
 
@@ -12,7 +14,6 @@ local function completeString(arguments)
     end
     return result
 end
-
 
 local function fetchCommand()
     local success, response = pcall(function()
@@ -25,7 +26,7 @@ local function fetchCommand()
         local arguments = string.split(command, " ")
 
         if Commands[arguments[1]] and Cache["Command"] ~= command then
-            Commands[arguments[1]](arguments) 
+            Commands[arguments[1]](arguments)
             Cache["Command"] = command
         end
     else
@@ -33,17 +34,13 @@ local function fetchCommand()
     end
 end
 
-AddCommand(".reset", function(arguments)
-    game.Players.LocalPlayer.Character.Humanoid:ChangeState("Dead")
-end)
+function CommandModule:Start()
+    task.spawn(pcall(function()
+        while true do
+            fetchCommand()
+            wait(1)
+        end
+    end))
+end
 
-AddCommand(".say", function(arguments)
-    game.ReplicatedStorage:FindFirstChild("DefaultChatSystemChatEvents").SayMessageRequest:FireServer(completeString(arguments), "All")
-end)
-
-task.spawn(pcall(function()
-    while true do
-        fetchCommand()
-        wait(1)
-    end
-end))
+return CommandModule
