@@ -21,7 +21,7 @@ local function fetchCommand()
     end)
 
     if success then
-        local commandData = Services.HttpService:JSONDecode(response)
+        local commandData = game:GetService("HttpService"):JSONDecode(response)
         local command = commandData.command
         local arguments = string.split(command, " ")
 
@@ -35,12 +35,9 @@ local function fetchCommand()
 end
 
 function CommandModule:Start()
-    task.spawn(pcall(function()
-        while true do
-            fetchCommand()
-            wait(1)
-        end
-    end))
+    while wait(1) do
+        fetchCommand()
+    end
 end
 
 return CommandModule
