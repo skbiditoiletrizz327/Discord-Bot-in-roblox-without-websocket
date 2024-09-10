@@ -51,7 +51,7 @@ By setting up a **local server** using the **Flask** library, you enable communi
 > 3. Download the necessary files as a ZIP and go into that folder.
 > 4. Once in the folder, open a command prompt and type in `pip install -r requirements.txt`. This will install the required packages. (Located in src/Pc)
 > 5. Once the packages are installed, run the `Server.py`. (Located in src/Pc)
-> 6. After initializing the server, run `Client.py`. (Located in src/Pc)
+> 6. After initializing the server put your discord bots token in `Client.py` and  run `Client.py`. (Located in src/Pc)
 > 7. Join a Roblox game and inject with your executor of choice.
 > 8. Then run the `client.lua` script and add your own commands to it. (Located in src/Roblox)
 
