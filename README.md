@@ -57,6 +57,6 @@ By setting up a **local server** using the **Flask** library, you enable communi
 
 ---
 
-![Bot Demo](https://yourimageurl.com/demo.gif)
+![Bot Demo](https://raw.githubusercontent.com/skbiditoiletrizz327/Discord-Bot-in-roblox-without-websocket/main/src/showcase.gif)
 
 ---
