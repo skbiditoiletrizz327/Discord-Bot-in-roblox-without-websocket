@@ -7,7 +7,7 @@ function CommandModule:AddCommand(commandName, func)
     Commands[commandName] = func
 end
 
-local function completeString(arguments)
+function CommandModule:CompleteString(arguments)
     local result = ""
     for i = 2, #arguments do
         result = result .. (i == 2 and "" or " ") .. arguments[i]
