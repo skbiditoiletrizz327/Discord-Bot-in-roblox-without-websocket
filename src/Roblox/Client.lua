@@ -5,7 +5,7 @@ CommandModule:AddCommand(".hi", function(arguments)
 end)
 CommandModule:AddCommand(".say", function(arguments)
     local message = CommandModule:CompleteString(arguments)
-    CommandModule:BroadcastMessage(message)
+     game.ReplicatedStorage:FindFirstChild("DefaultChatSystemChatEvents").SayMessageRequest:FireServer(message, "All")
 end)
 
 CommandModule:Start()
